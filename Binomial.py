@@ -21,10 +21,10 @@ def BinomialCDF (N,P): #Función binomialCFD
 def __main__ (): 
     EjeX=[] #Númeracion del eje X
     plt.ion()
-    for j in range(100+1): #t se ingresa manualmente
+    for j in range(t+1): #t se ingresa manualmente
         EjeX.append(j)
     for i in Prob:
-        plt.plot(EjeX, Binomial(100, i),'.')
+        plt.plot(EjeX, Binomial(t, i),'.')
     plt.xlabel('Cantidad de exitos')
     plt.ylabel('Resultados')
 
